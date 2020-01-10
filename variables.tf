@@ -98,7 +98,7 @@ variable "servers" {
 
 variable "workers" {
   description = "The number of nomad worker vms to create."
-  default     = "3"
+  default     = "10"
 }
 
 variable "consul_url" {
