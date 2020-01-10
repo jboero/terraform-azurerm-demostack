@@ -57,16 +57,17 @@ module "primarycluster" {
   TTL                 = var.TTL
   cni_plugin_url       = var.cni_plugin_url
   
-  # ca_key_algorithm      = var.ca_key_algorithm
-  # ca_private_key_pem    = var.ca_private_key_pem
-  # ca_cert_pem           = var.ca_cert_pem
-  # consul_join_tag_value = "${var.hostname}-${var.consul_join_tag_value}"
-  # consul_gossip_key     = var.consul_gossip_key
-  # consul_master_token   = var.consul_master_token
-  # nomad_gossip_key      = var.nomad_gossip_key
+  ca_key_algorithm      = var.ca_key_algorithm
+  ca_private_key_pem    = var.ca_private_key_pem
+  ca_cert_pem           = var.ca_cert_pem
+  consul_join_tag_value = "${var.hostname}-${var.consul_join_tag_value}"
+  consul_gossip_key     = var.consul_gossip_key
+  consul_master_token   = var.consul_master_token
+  nomad_gossip_key      = var.nomad_gossip_key
 
 
    # EMEA-SE-PLAYGROUND
+  /*
   ca_key_algorithm      = data.terraform_remote_state.emea_se_playground_tls_root_certificate.outputs.ca_key_algorithm
   ca_private_key_pem    = data.terraform_remote_state.emea_se_playground_tls_root_certificate.outputs.ca_private_key_pem
   ca_cert_pem           = data.terraform_remote_state.emea_se_playground_tls_root_certificate.outputs.ca_cert_pem
@@ -74,4 +75,5 @@ module "primarycluster" {
   consul_gossip_key     = data.terraform_remote_state.emea_se_playground_tls_root_certificate.outputs.consul_gossip_key
   consul_master_token   = data.terraform_remote_state.emea_se_playground_tls_root_certificate.outputs.consul_master_token
   nomad_gossip_key      = data.terraform_remote_state.emea_se_playground_tls_root_certificate.outputs.nomad_gossip_key
+  */
 }
