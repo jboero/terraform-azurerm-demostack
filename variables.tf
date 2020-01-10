@@ -103,7 +103,7 @@ variable "workers" {
 
 variable "consul_url" {
   description = "The url to download Consul."
-  default     = "https://releases.hashicorp.com/consul/1.2.2/consul_1.2.2_linux_amd64.zip"
+  default     = "https://releases.hashicorp.com/consul/1.6.2/consul_1.6.2_linux_amd64.zip"
 }
 
 variable "consul_ent_url" {
@@ -118,7 +118,7 @@ variable "fabio_url" {
 
 variable "nomad_url" {
   description = "The url to download nomad."
-  default     = "https://releases.hashicorp.com/nomad/0.8.6/nomad_0.8.6_linux_amd64.zip"
+  default     = "https://releases.hashicorp.com/nomad/0.10.2/nomad_0.10.2_linux_amd64.zip"
 }
 
 variable "nomad_ent_url" {
@@ -128,7 +128,7 @@ variable "nomad_ent_url" {
 
 variable "vault_url" {
   description = "The url to download vault."
-  default     = "https://releases.hashicorp.com/vault/0.11.1/vault_0.11.1_linux_amd64.zip"
+  default     = "https://releases.hashicorp.com/vault/1.3.1/vault_1.3.1_linux_amd64.zip"
 }
 
 variable "vault_ent_url" {
