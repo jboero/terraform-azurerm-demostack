@@ -17,12 +17,12 @@ variable "demo_prefix" {
 
 variable "hostname" {
   description = "VM hostname. Used for local hostname, DNS, and storage-related names."
-  default     = "demostack"
+  default     = "jboerodemostack"
 }
 
 variable "location" {
   description = "The region where the virtual network is created."
-  default     = "centralus"
+  default     = "westeurope"
 }
 
 
