@@ -1,6 +1,7 @@
 
 //--------------------------EMEA-SE_PLAYGROUND-2019-----------------------------------------
 # Using a single workspace:
+/*
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
@@ -11,10 +12,11 @@ terraform {
     }
   }
 }
-
+*/
 
 //--------------------------------------------------------------------
 // Workspace Data
+/*
 data "terraform_remote_state" "emea_se_playground_tls_root_certificate" {
   backend = "remote"
 
@@ -26,7 +28,8 @@ data "terraform_remote_state" "emea_se_playground_tls_root_certificate" {
     }
   } //config
 }
-
+*/
+  
 module "primarycluster" {
   source              = "./modules"
   resource_group      = var.resource_group
